@@ -8,4 +8,29 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Text</item>
+    </style>
+
+    <style name="TextView.Primary">
+        <item name="android:textAppearance">@style/Text.Primary</item>
+    </style>
+
+    <style name="TextView.Secondary">
+        <item name="android:textAppearance">@style/Text.Secondary</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Primary">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Secondary">
+        <item name="android:textColor">@color/gray_dove_light</item>
+    </style>
 </resources>
