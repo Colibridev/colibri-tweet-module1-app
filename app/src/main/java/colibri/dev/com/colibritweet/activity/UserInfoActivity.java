@@ -1,4 +1,4 @@
-package colibri.dev.com.colibritweet;
+package colibri.dev.com.colibritweet.activity;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,11 +12,15 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import colibri.dev.com.colibritweet.R;
 import colibri.dev.com.colibritweet.adapter.TweetAdapter;
 import colibri.dev.com.colibritweet.pojo.Tweet;
 import colibri.dev.com.colibritweet.pojo.User;
 
 public class UserInfoActivity extends AppCompatActivity {
+
+    public static final String USER_ID = "userId";
+
     private ImageView userImageView;
     private TextView nameTextView;
     private TextView nickTextView;
