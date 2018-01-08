@@ -1,69 +1,70 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="8dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/user_image_view"
-        android:src="@mipmap/ic_launcher"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
 
     <TextView
         android:id="@+id/user_name_text_view"
-        android:text="Имя"
-        android:layout_marginTop="5dp"
-        android:textSize="16sp"
+        android:layout_below="@id/user_image_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Имя"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/user_nick_text_view"
-        android:text="Ник"
-        android:layout_marginTop="5dp"
-        android:textSize="16sp"
+        android:layout_below="@id/user_name_text_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ник"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/user_description_text_view"
-        android:text="Описание"
-        android:layout_marginTop="5dp"
-        android:textSize="16sp"
+        android:layout_below="@id/user_nick_text_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Описание"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/user_location_text_view"
         android:text="Местоположение"
-        android:layout_marginTop="5dp"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <LinearLayout
+        android:layout_below="@id/user_description_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:orientation="horizontal">
+        android:textSize="16sp"/>
 
-        <TextView
-            android:id="@+id/following_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Читает"
-            android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/following_text_view"
+        android:layout_below="@id/user_location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Читает"
+        android:textSize="16sp"/>
 
-        <TextView
-            android:id="@+id/followers_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Читатели"
-            android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/followers_text_view"
+        android:layout_below="@id/user_location_text_view"
+        android:layout_toEndOf="@+id/following_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Читатели"
+        android:textSize="16sp"/>
 
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
