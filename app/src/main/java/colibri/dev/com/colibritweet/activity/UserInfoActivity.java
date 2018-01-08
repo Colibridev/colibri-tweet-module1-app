@@ -3,10 +3,14 @@ package colibri.dev.com.colibritweet.activity;
 import java.util.Arrays;
 import java.util.Collection;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,6 +32,7 @@ public class UserInfoActivity extends AppCompatActivity {
     private TextView locationTextView;
     private TextView followingCountTextView;
     private TextView followersCountTextView;
+    private Toolbar toolbar;
 
     private RecyclerView tweetsRecyclerView;
     private TweetAdapter tweetAdapter;
@@ -44,11 +49,28 @@ public class UserInfoActivity extends AppCompatActivity {
         locationTextView = findViewById(R.id.user_location_text_view);
         followingCountTextView = findViewById(R.id.following_count_text_view);
         followersCountTextView = findViewById(R.id.followers_count_text_view);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         initRecyclerView();
 
         loadUserInfo();
         loadTweets();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.user_info_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.action_search) {
+            Intent intent = new Intent(this, SearchUsersActivity.class);
+            startActivity(intent);
+        }
+        return true;
     }
 
     private void loadTweets() {
@@ -93,6 +115,8 @@ public class UserInfoActivity extends AppCompatActivity {
 
         String followersCount = String.valueOf(user.getFollowersCount());
         followersCountTextView.setText(followersCount);
+
+        getSupportActionBar().setTitle(user.getName());
     }
 
     private User getUser() {
