@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:padding="8dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_image_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:src="@mipmap/ic_launcher"/>
 
     <TextView
