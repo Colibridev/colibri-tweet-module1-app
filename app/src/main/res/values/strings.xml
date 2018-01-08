@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ColibriTweet</string>
+    <string name="app_name">Colibri Tweet</string>
+
+    <string name="followers_hint">Followers</string>
+    <string name="following_hint">Following</string>
+
+    <string name="search_query_hint">Enter user name</string>
+    <string name="search_hint">search</string>
+    <string name="not_enough_symbols_msg">Please enter at least one symbol</string>
+    <string name="loading_error_msg">Error during loading info</string>
 </resources>
