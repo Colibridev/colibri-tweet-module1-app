@@ -24,6 +24,7 @@
 
     <style name="Text">
         <item name="android:textSize">16sp</item>
+        <item name="fontFamily">sans-serif</item>
     </style>
 
     <style name="Text.Primary">
@@ -32,5 +33,26 @@
 
     <style name="Text.Secondary">
         <item name="android:textColor">@color/gray_dove_light</item>
+    </style>
+
+    <style name="TextView.Primary.Header">
+        <item name="android:textAppearance">@style/Text.Primary.Header</item>
+    </style>
+
+    <style name="Text.Primary.Header">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Primary.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Primary.Bold">
+        <item name="android:textAppearance">@style/Text.Primary.Bold</item>
+    </style>
+
+    <style name="TextIcon" parent="TextView.Secondary">
+        <item name="fontFamily">@font/font_awesome</item>
     </style>
 </resources>

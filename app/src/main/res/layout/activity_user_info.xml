@@ -14,7 +14,7 @@
     <TextView
         android:id="@+id/user_name_text_view"
         android:layout_below="@id/user_image_view"
-        style="@style/TextView.Primary"
+        style="@style/TextView.Primary.Header"
         android:layout_marginTop="@dimen/text_small_margin"
         android:text="Имя"/>
 
@@ -33,23 +33,50 @@
         android:text="Описание"/>
 
     <TextView
+        android:id="@+id/user_location_icon_text_view"
+        android:layout_below="@id/user_description_text_view"
+        style="@style/TextIcon"
+        android:layout_marginTop="@dimen/text_small_margin"
+        android:text="@string/fa_map_marker"/>
+
+    <TextView
         android:id="@+id/user_location_text_view"
         android:text="Местоположение"
         android:layout_below="@id/user_description_text_view"
+        android:layout_toEndOf="@id/user_location_icon_text_view"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="@dimen/text_small_margin"
         style="@style/TextView.Secondary"/>
 
     <TextView
+        android:id="@+id/following_count_text_view"
+        android:layout_below="@id/user_location_text_view"
+        style="@style/TextView.Primary.Bold"
+        android:layout_marginTop="@dimen/text_small_margin"
+        android:text="4"/>
+
+    <TextView
         android:id="@+id/following_text_view"
+        android:layout_toEndOf="@+id/following_count_text_view"
         android:layout_below="@id/user_location_text_view"
         style="@style/TextView.Secondary"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="@dimen/text_small_margin"
         android:text="@string/following_hint"/>
 
     <TextView
+        android:id="@+id/followers_count_text_view"
+        android:layout_toEndOf="@+id/following_text_view"
+        android:layout_below="@id/user_location_text_view"
+        style="@style/TextView.Primary.Bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/text_small_margin"
+        android:text="4"/>
+
+    <TextView
         android:id="@+id/followers_text_view"
         android:layout_below="@id/user_location_text_view"
-        android:layout_toEndOf="@+id/following_text_view"
+        android:layout_toEndOf="@+id/followers_count_text_view"
         style="@style/TextView.Secondary"
         android:layout_marginTop="@dimen/text_small_margin"
         android:layout_marginStart="10dp"

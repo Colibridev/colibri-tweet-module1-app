@@ -9,4 +9,6 @@
     <string name="search_hint">search</string>
     <string name="not_enough_symbols_msg">Please enter at least one symbol</string>
     <string name="loading_error_msg">Error during loading info</string>
+
+    <string name="fa_map_marker">\uf041</string>
 </resources>
