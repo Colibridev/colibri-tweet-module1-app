@@ -55,4 +55,10 @@
     <style name="TextIcon" parent="TextView.Secondary">
         <item name="fontFamily">@font/font_awesome</item>
     </style>
+
+    <style name="HalfWidth">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
 </resources>
