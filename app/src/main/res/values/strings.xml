@@ -13,4 +13,6 @@
     <string name="fa_map_marker">\uf041</string>
     <string name="fa_heart_o">\uf08a</string>
     <string name="fa_retweet">\uf079</string>
+
+    <string name="ion_search"></string>
 </resources>
