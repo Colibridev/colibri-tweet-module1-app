@@ -32,7 +32,7 @@
         android:layout_toEndOf="@+id/author_nick_text_view"
         android:ellipsize="end"
         android:maxLines="1"
-        android:text="26 Oct"/>
+        android:text="нояб. 27"/>
 
     <TextView
         android:id="@+id/tweet_content_text_view"
@@ -40,7 +40,7 @@
         android:layout_below="@id/author_name_text_view"
         android:layout_marginTop="@dimen/text_small_margin"
         android:layout_toEndOf="@id/profile_image_view"
-        android:text="Как повысить свою производительность, используя крутые плагины в Android Studio?"/>
+        android:text="Сегодня поговорим о RecyclerView и о том, почему нужно использовать именно его."/>
 
     <ImageView
         android:id="@+id/tweet_image_view"
